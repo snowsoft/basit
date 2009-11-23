@@ -69,7 +69,7 @@ public class Basla {
                     }
                     try {
                         Deger deger = calistir(new ANTLRStringStream(satir), calistirici, ortam, false);
-                        ortam.sonuc(null); // sonuc ifadesinden sonra calismaya izin vermek icin
+                        ortam.sonuc(null); // sonuc komutundan sonra calismaya izin vermek icin
                         if (deger != DTanimsiz.TANIMSIZ) {
                             System.out.println(deger.metin());
                         }
@@ -80,20 +80,5 @@ public class Basla {
                 }
             }
         }
-        //basitLexer lex = new basitLexer(new ANTLRFileStream("E:\\BASIT\\basit.c\\output\\__Test___input.txt", "UTF8"));
-        /*basitLexer lex = new basitLexer(new ANTLRInputStream(System.in));
-        CommonTokenStream tokens = new CommonTokenStream(lex);
-        basitParser g = new basitParser(tokens);
-        basitParser.calisma_birimi_return p = null;
-        try {
-            p = g.calisma_birimi();
-        } catch (RecognitionException e) {
-            e.printStackTrace();
-        }
-        Tree t = (Tree) p.getTree();
-        printTree(t, 0);
-        System.out.println("===================");
-        Calistirici c = new Calistirici();
-        System.out.println(c.calistir(t).metin());*/
     }
 }

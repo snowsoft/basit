@@ -199,7 +199,6 @@ eksisizTekil
 
 ifade
 	:	mantiksal
-	//|	fonksiyonIfadesi
 	;
 
 ifadeler
